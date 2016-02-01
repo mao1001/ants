@@ -10,14 +10,17 @@ if(process.argv[2] === '--debug'){
   
   //run hard-coded commands
   game.deployAnt('Grower', '0,0'); //for example
-  game.deployAnt('Thrower', '0,1');
   game.takeTurn(); //for example
   game.takeTurn();
+  game.deployAnt('Grower', '0,1');
+  game.takeTurn(); //for example
+  game.takeTurn();
+  game.deployAnt('Hungry', '0,2');
   game.takeTurn();
   ants.showMapOf(game); //show the board, for example
 
 
-  //ants.play(game); //launch the interactive version from here
+  ants.play(game); //launch the interactive version from here
 
 }
 else {
