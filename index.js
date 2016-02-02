@@ -4,7 +4,7 @@ var ants = require('./lib/ants_ui.js'); //load the game (UI-level) to interact w
 
 if(process.argv[2] === '--debug'){
   //the scenario to play
-  var colony = ants.AntColony.createDefaultColony();
+  var colony = ants.AntColony.createWetColony();
   var hive = ants.Hive.createTestHive();
   var game = new ants.AntGame(colony, hive);
   
@@ -25,7 +25,7 @@ if(process.argv[2] === '--debug'){
 }
 else {
   //initialize the game to play (not interactively selected yet)
-  var colony = ants.AntColony.createDefaultColony();
+  var colony = ants.AntColony.createWetColony();
   var hive = ants.Hive.createTestHive();
   var game = new ants.AntGame(colony, hive);
 
